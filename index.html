@@ -1,96 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="/_vercel/insights/script.js"></script>
+    
+    <link rel="stylesheet" href="./Projeto-Biografia/src/css/style.css">
+    <link rel="shortcut icon" href="Projeto-Biografia/src/icons/favicon.png" type="image/x-icon">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Maven+Pro:wght@400..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Maven+Pro:wght@400..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Comfortaa:wght@300..700&family=Maven+Pro:wght@400..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Tenor+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: 'Outfit';
+        }
+
+        h2 {
+            font-family: 'Quicksand';
+        }
+
+        p {
+            font-family: 'Comfortaa';
+        }
+    </style>
   </head>
   <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
+    <header id="cabecalho">
+      <section id="logo-section">
+          <ul>
+              <li id="logo"><img src="Projeto-Biografia/src/imagens/Logo_Biografia.png" alt="Logo"></li>
+          </ul>
+      </section>
+      <section id="info-cabecalho">
+          <h1>Biografia</h1>
+          <h2>Timothy Beernes-Lee e sua importância para o HTML e a web.</h2>
+          <strong>
+              <p>Escrito por Vinicíus Martins</p>
+          </strong>
+
+          <hr>
+      </section>
+  </header>
+
+  <main id="conteudo-principal">
+      <picture id="foto-tim">
+          <img src="Projeto-Biografia/src/imagens/imagem-Tim.png" alt="Imagem de Timothy Beerners-Lee">
+      </picture>
+
+      <section class="texto-main">
+          <h1>Timothy Berners-Lee: O Pai da World Wide Web</h1>
+          <p>Timothy John Berners-Lee é um físico britânico, cientista da computação e professor do MIT, mais
+              conhecido como o criador da World Wide Web. Sua invenção revolucionou a maneira como as pessoas acessam
+              e compartilham informações globalmente.</p>
+
+          <p><strong>A Criação do HTML e a World Wide Web:</strong>
+              Berners-Lee, enquanto trabalhava no CERN (Organização Europeia para a Pesquisa Nuclear), percebeu a
+              necessidade de uma forma mais eficiente de compartilhar informações entre os pesquisadores. Foi então
+              que ele desenvolveu a HyperText Markup Language (HTML), a linguagem de marcação que serve como base para
+              a construção das páginas da web.</p>
+
+          <p>
+              O HTML, em conjunto com o HTTP (HyperText Transfer Protocol) e o WWW (World Wide Web), formaram a base
+              da internet que conhecemos hoje. O HTML permite que textos, imagens, vídeos e outros elementos sejam
+              estruturados e apresentados de forma padronizada em navegadores web.
+          </p>
+      </section>
+
+      <section class="texto-main">
+          <h1>O que influenciou a criação da HTML?</h1>
+          <p>A criação do HTML não foi um evento isolado, mas sim o resultado de um conjunto de fatores que
+              convergiram para a necessidade de uma forma mais eficiente e padronizada de compartilhar informações.
+          </p>
+
+          <p>O ambiente científico, especialmente no CERN, demandava uma maneira de compartilhar dados e resultados de
+              forma rápida e eficaz. Os sistemas existentes, baseados em protocolos de transferência de arquivos, eram
+              complexos e pouco intuitivos. Berners-Lee, inspirado pela ideia de uma "teia" de informações
+              interconectadas, imaginou um sistema onde os documentos poderiam ser ligados entre si por hiperlinks.
+              Essa visão de uma rede global de informações, onde qualquer pessoa poderia acessar e compartilhar
+              conteúdo, era revolucionária para a época.</p>
+
+          <p>A linguagem criada para dar vida a essa visão precisava ser fácil de aprender e utilizar, para que
+              pesquisadores de diferentes áreas pudessessem criar e compartilhar seus documentos sem a necessidade de
+              conhecimentos profundos em programação. O HTML, com sua sintaxe simples baseada em tags, atendia a esse
+              requisito.</p>
+
+          <p>A criação do HTML, em conjunto com o HTTP e o WWW, revolucionou a forma como as pessoas acessam e
+              compartilham informações. A World Wide Web, que nasceu a partir dessas tecnologias, democratizou o
+              acesso à informação, impulsionou a inovação e conectou pessoas do mundo inteiro.</p>
+      </section>
+
+      <section class="texto-main">
+          <h1>Qual o papel da W3C para desenvolver o HTML?</h1>
+          <p>O W3C (World Wide Web Consortium) desempenha um papel crucial na evolução e padronização do HTML. Fundado
+              por Tim Berners-Lee, o criador da World Wide Web, o W3C é uma comunidade global que trabalha
+              incansavelmente para garantir que a web seja acessível, interoperável e inovadora.</p>
+
+          <p>O W3C é responsável por criar e manter os padrões do HTML, definindo as regras e estruturas que devem ser
+              seguidas para a criação de páginas web. Esses padrões garantem que os navegadores interpretem o código
+              HTML de forma consistente, independentemente da plataforma.</p>
+
+          <p>Ao trabalhar de forma colaborativa com empresas, instituições de pesquisa e desenvolvedores do mundo
+              todo, o W3C cria padrões que atendem às necessidades da comunidade e garantem que sejam relevantes e
+              amplamente adotados. Além disso, o W3C se dedica a promover a acessibilidade na web, desenvolvendo
+              diretrizes para garantir que as páginas web sejam acessíveis a todas as pessoas, incluindo pessoas com
+              deficiência.</p>
+
+          <p>A importância dos padrões do W3C é inegável. Eles garantem a interoperabilidade das páginas web,
+              permitindo que sejam exibidas corretamente em diferentes navegadores e dispositivos. Além disso, as
+              diretrizes de acessibilidade do W3C ajudam a garantir que todos tenham acesso à informação na web. Ao
+              estabelecer uma base sólida para o desenvolvimento web, os padrões do W3C permitem que os
+              desenvolvedores criem experiências web mais ricas e inovadoras.</p>
+
+          <p>Em resumo, o W3C é a principal organização responsável por garantir que o HTML continue a evoluir e a
+              atender às necessidades da web em constante mudança. Ao seguir os padrões do W3C, os desenvolvedores
+              podem criar páginas web de alta qualidade, acessíveis e compatíveis com diferentes plataformas.</p>
+      </section>
+
+      <section class="texto-main">
+          <h1>Por que o HTML venceu a disputa entre as linguagens de marcação web?</h1>
+          <p>O HTML emergiu como a linguagem padrão para a criação de páginas web devido a uma combinação de fatores
+              que o tornaram superior a outras opções. Sua simplicidade, padronização e ampla adoção foram cruciais
+              para seu sucesso.</p>
+
+          <p>A sintaxe do HTML é relativamente simples, utilizando tags para definir elementos como títulos,
+              parágrafos e imagens. Essa simplicidade o torna acessível a um público amplo, desde iniciantes até
+              desenvolvedores experientes. Além disso, o W3C estabeleceu padrões rigorosos para o HTML, garantindo que
+              diferentes navegadores interpretem o código da mesma forma. Essa padronização foi essencial para a
+              interoperabilidade entre diferentes plataformas e dispositivos.</p>
+
+          <p>Outro fator importante é o amplo suporte do HTML por todos os navegadores modernos. Essa adoção
+              generalizada fortaleceu ainda mais sua posição como linguagem dominante. A flexibilidade do HTML permite
+              a criação de uma grande variedade de estruturas e layouts, desde páginas simples até aplicações web
+              complexas.</p>
+
+          <p>Por fim, a existência de uma comunidade de desenvolvedores muito grande e ativa, que oferece uma vasta
+              quantidade de recursos, tutoriais e ferramentas, facilita o aprendizado e o desenvolvimento com HTML.
+          </p>
+      </section>
+
+      <section class="texto-main">
+          <h1>Evolução do HTML</h1>
+          <p>O HTML, desde sua criação, passou por diversas transformações, evoluindo para atender às demandas cada
+              vez mais complexas da web. Desde a sua versão inicial, simples e limitada, até as versões mais recentes,
+              repletas de recursos e capazes de criar experiências web ricas e interativas, o HTML tem sido
+              fundamental para a construção da internet como a conhecemos hoje.</p>
+
+          <p>As primeiras versões do HTML eram bastante básicas, limitando-se a estruturar textos e inserir imagens de
+              forma simples. Com o passar do tempo, novas versões foram introduzindo recursos como tabelas,
+              formulários e suporte a scripts, ampliando as possibilidades de criação de páginas web.</p>
+
+          <p>Um marco importante na evolução do HTML foi a introdução do CSS (Cascading Style Sheets), que permitiu
+              separar a estrutura do conteúdo da sua apresentação visual. Essa separação trouxe maior organização e
+              flexibilidade ao desenvolvimento web.</p>
+
+          <p>Com o HTML5, a linguagem deu um salto significativo, incorporando recursos modernos como:
+          <ul>
+              <li><strong>Multimídia:</strong> Nativo para áudio e vídeo, eliminando a necessidade de plugins como o
+                  Flash.</li>
+
+              <li><strong>Gráficos:</strong> Canvas para criação de gráficos e animações personalizadas.</li>
+
+              <li><strong>Armazenamento local:</strong> Web Storage para armazenar dados localmente no navegador.</li>
+
+              <li><strong>Formulários aprimorados:</strong> Novos elementos e atributos para criação de formulários
+                  mais robustos e interativos.</li>
+
+              <li><strong>Geolocalização:</strong> Capacidade de acessar a localização geográfica do usuário.</li>
+
+              <li><strong>WebSockets:</strong> Comunicação bidirecional em tempo real entre o navegador e o servidor.
+              </li>
+          </ul>
+          </p>
+          <p>O HTML5 trouxe uma nova era para o desenvolvimento web, tornando possível criar aplicações web ricas e
+              interativas que rivalizam com aplicações desktop.</p>
+
+          <p>A evolução do HTML continua, com novas propostas e discussões sobre o futuro da linguagem. A comunidade
+              web está sempre buscando maneiras de aprimorar o HTML, tornando-o mais eficiente, poderoso e acessível.
+          </p>
+
+          <p>Em resumo, a história do HTML é uma jornada de constante evolução, com cada nova versão trazendo recursos
+              e funcionalidades que moldam a forma como interagimos com a web. Desde a sua criação, o HTML tem sido a
+              base fundamental para a construção de bilhões de páginas web em todo o mundo.</p>
+      </section>
+  </main>
+
+  <footer id="rodape">
+      <article>
+          <h1>Contatos do escritor</h1>
+          <picture>
+              <a target="_blank" href="https://github.com/Pudimlixo"><img src="Projeto-Biografia/src/icons/github-icon.png" alt="Github link"></a>
+          </picture>
+
+          <picture>
+              <a target="_blank" href="https://www.instagram.com/_.vini_7/"><img src="Projeto-Biografia/src/icons/insta_icons.png" alt="Instagram link"></a>
+          </picture>
+
+          <p>&copy;Direitos autorais reservados - 2024</p>
+      </article>
+  </footer>
   </body>
 </html>
