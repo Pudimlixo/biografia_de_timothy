@@ -1,0 +1,33 @@
+@media (min-width:100px) and (max-width:900px) {
+    #cabecalho {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #logo-section {
+        height:100px;
+        margin-right: 50px;
+        padding:10px;
+    }
+
+    #logo-section ul {
+        margin-right: 50px;
+    }
+
+    #logo-section #logo img {
+        width:150px;
+        position: relative;
+        right:45px;
+        bottom:35px;
+    }
+
+    header {
+        height:250px;
+    }
+
+    hr {
+        display:none;
+    }
+    
+}
